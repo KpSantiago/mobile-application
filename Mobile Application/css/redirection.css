@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  transition: 0.5s;
+}
+header{
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  position: relative;
+  z-index: 9999999999999;
+}
+header div{
+  width: 30px;
+  height: 30px;
+}
+header .menuToggle{
+  padding-top: 4px;
+}
+header .menuToggle p{
+  background-color: #fff;
+  width: 100%;
+  height: 4px;
+  border-radius: 40px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+header .menuToggle div .p2{
+  background-color: #fff;
+  width: 75%;
+  height: 4px;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+header .menuToggle div p.active{
+  transition: 0.5s;
+  transform: translateY(8px) rotate(-45deg);
+}
+header .menuToggle .p2.active {
+  transition: 0.5s;
+  width: 100%;
+  height: 4px;
+  transform: rotate(45deg)
+}
+.menuHamb{
+  background: #ab88dc;
+  min-height: 500px;
+  min-width: 65vw;
+  position: fixed;
+  z-index: 999;
+  top: -700px;
+  left: -500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 60px;
+  transition: 0.5s;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 4px rgb(0, 0, 0, 0.25);
+}
+.menuHamb span{
+  width: 85%;
+  display: flex;
+  justify-content: start;
+}
+.menuHamb .line{
+  background: #fff;
+  height: 5px;
+  width: 85%;
+  border-radius: 30px;
+}
+.menuHamb .menuVertical{
+  width: 85%;
+  height: 350px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menuHamb a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2px 0;
+  padding-right: 15px;
+}
+.menuHamb.active{
+  transition: 0.5s;
+  z-index: 1;
+  top: 0;
+  left:0;
+}
+.menuHamb2{
+  background: #ab88dc;
+  color: #fff;
+  height: 120px;
+  width: 120px;
+  position: fixed;
+  z-index: 999;
+  left: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 0px;
+  transition: 0.5s;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 4px rgb(0, 0, 0, 0.25);
+}
+.menuHamb2 img{
+  min-width: 50px;
+  min-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.menuHamb2 p{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+header .menuToggle2 p{
+  background: #fff;
+  width: 6px;
+  height: 6px;
+  margin-top: 2px;
+  border-radius: 50px;
+  box-shadow: 0 15px 0 0 #fff;
+}
+.menuHamb2.active{
+  transition: 0.5s;
+  z-index: 1;
+  top: 0;
+  left: 67vw;
+}
+.pageBackG{
+  background: url("../img/image.jpg");
+  background-size: 100% 96%;
+  height: 52%;
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+}
+.pageBackG2{
+  background: url("../img/yosemite.jpg");
+  background-size: 100% 96%;
+  height: 52%;
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+}
+.pageBackG3 {
+  background: url("../img/rioDeJaneiro.jpg");
+  background-size: 120%;
+  background-position-y: -100px;
+  height: 52%;
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+  
+}
+main{
+  background: #fff;
+  min-height: 70%;
+  max-width: 100%;
+  position: relative;
+  bottom: 250px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px;
+  box-shadow: 0 -10px 20px 4px rgb(0, 0, 0, 0.5);
+}
+main{
+  display: flex;
+  flex-flow: column;
+}
+.item1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item1 p{
+  font-size: 50px;
+  font-weight: 500;
+  color: #ab88dc;
+}
+.item2{
+  width: 100%;
+  color: #ab88dc;
+  margin-bottom: 10px;
+}
+.item2{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.item3{
+  margin-bottom: 30px;
+}
+.item3 span svg{
+  fill: #ffff00;
+  stroke-width: 1;
+  stroke: #000;
+}
+.item3 span:last-child svg{
+  fill: transparent;
+}
+.item4 h2, p{
+  margin-bottom: 15px;
+}
+.item4 .numberOfPeople{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.item4 .numberOfPeople div{
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px 2px rgb(0, 0, 0, 0.15);
+  font-size: 25px;
+  font-weight: 600;
+}
+.item5 h2{
+  margin-bottom: 10px;
+}
+.item5 p {
+  width: 100%;
+  text-align: justify;
+}
